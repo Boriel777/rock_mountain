@@ -1,0 +1,206 @@
+/*  Media Queries */
+
+@media (max-width: 1130px) {
+
+    /* Mobile Navigation Styles */
+
+    .hamburger-btn::before,
+    .hamburger-btn input,
+    .hamburger-btn::after {
+        content: "";
+        width: var(--bar-width);
+        height: var(--bar-height);
+        background-color: var(--accent-color);
+        color: var(--secondary-color);
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+        transform-origin: left center;
+    }
+
+    .hamburger-btn {
+        --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+        display: flex;
+        flex-direction: column;
+        gap: var(--hamburger-gap);
+        width: max-content;
+        position: fixed;
+        top: var(--hamburger-margin);
+        right: var(--hamburger-margin);
+        z-index: 1000;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 0.7rem 0.4rem;
+        border-radius: 50px;
+    }
+
+    .hamburger-btn input {
+        appearance: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        pointer-events: none;
+    }
+
+    .hamburger-btn:has(input:checked)::before {
+        rotate: 45deg;
+        translate: 0 calc(var(--bar-height) / -2);
+        width: var(--x-width);
+    }
+
+    .hamburger-btn:has(input:checked)::after {
+        rotate: -45deg;
+        translate: 0 calc(var(--bar-height) / 2);
+        width: var(--x-width);
+    }
+
+    .hamburger-btn input:checked {
+        opacity: 0;
+        width: 0;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100dvw;
+        height: 100dvh;
+        background-color: rgba(0, 0, 0, 0.90);
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hamburger-btn:has(input:checked)+.sidebar {
+        transform: translateX(0);
+    }
+
+    .hamburger-btn:has(input:checked) {
+        background: transparent;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+        padding-top: 0;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(1.2rem, 4dvw, 2rem);
+    }
+
+    .nav_links a {
+        font-size: clamp(1.2rem, 4vw, 2rem);
+    }
+
+    .social_icon {
+        margin: 0;
+        height: 20px;
+    }
+
+    /* Mobile Navigation Styles END */
+
+    /* Content Styles */
+
+    .hero_content {
+        height: 100%;
+    }
+
+    h1 {
+        font-size: clamp(3.5rem, 8vw, 6rem);
+    }
+
+    .hero_subtitle {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+
+    .teaser h2 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+
+    .cta_btn {
+        font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+
+    .teaser {
+        gap: 2rem;
+    }
+
+    .concert_content {
+        font-size: clamp(1rem, 4vw, 1.5rem);
+    }
+
+    .concert_content::after {
+        display: none;
+    }
+
+    .cta_section h3 {
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        padding: 4rem 0;
+        width: clamp(20ch, 80vw, 60ch);
+    }
+
+    footer {
+        padding: 4rem 2rem 1rem;
+    }
+
+    .footer_content p {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+    }
+
+    .footer_social_container {
+        gap: 1rem;
+    }
+
+    .footer_social_icons {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .footer_social_icons img {
+        width: clamp(1.8rem, 4vw, 3rem);
+        height: clamp(1.8rem, 4vw, 3rem);
+    }
+
+    .footer_content form.subscribe_form {
+        padding-top:0;
+    }
+
+    .footer_content input[type="email"] {
+        padding: 0.5rem 1.2rem;
+        height: 2.5rem;
+        width: 100%;
+    }
+    
+    .footer_content input[type="email"]::placeholder {
+        font-size: clamp(1rem, 4vw, 1.2rem);
+
+    }
+
+    .footer_content button {
+        padding: 0.5rem 2rem;
+        height: 2.5rem;
+        font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+
+    /* Content Styles END */
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .concert_content {
+        min-width: unset;
+    }
+
+}
+
+/*  Media Queries END */

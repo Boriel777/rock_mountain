@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Mountain</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,19 +15,27 @@
 </head>
 
 <body>
-    <header class="aot">
-        <nav>
-            <a href="#home"><img class="header_logo" src="img/logo.png" alt="Rock Mountain Logo"></a>
-            <ul class="nav_links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Locations</a></li>
-                <li><a href="#members">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://www.facebook.com/"><img class="social_icon" src="img/facebook_white.png" alt="facebook_icn"></a></li>
-                <li><a href="https://www.instagram.com/"><img class="social_icon" src="img/instagram_white.png" alt="insta_icn"></a></li>
-                <li><a href="https://x.com/"><img class="social_icon" src="img/twitter_white.png" alt="twitter_icn"></a></li>
-            </ul>
-        </nav>
+    <header id="home" class="aot">
+        <label class="hamburger-btn">
+            <input type="checkbox" id="menu-toggle">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <a href="#home"><img class="header_logo" src="img/logo.png" alt="Rock Mountain Logo"></a>
+                <ul class="nav_links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Locations</a></li>
+                    <li><a href="#members">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.facebook.com/"><img class="social_icon" src="img/facebook_white.png"
+                                alt="facebook_icn"></a></li>
+                    <li><a href="https://www.instagram.com/"><img class="social_icon" src="img/instagram_white.png"
+                                alt="insta_icn"></a></li>
+                    <li><a href="https://x.com/"><img class="social_icon" src="img/twitter_white.png"
+                                alt="twitter_icn"></a></li>
+                </ul>
+            </nav>
+        </aside>
         <div class="hero_content">
             <h1>Rock Mountain</h1>
             <span class="hero_subtitle">Discover the best live music</span>
@@ -71,8 +80,8 @@
         <div class="footer_content">
             <p>Subscribe & follow to get updates from Rock Mountain!</p>
             <div class="footer_social_container">
-                <div class="footer_social_icons"><a href="https://www.facebook.com/"><img src="img/Facebook.png" alt="facebook icon"></a><a
-                        href="https://www.instagram.com/">
+                <div class="footer_social_icons"><a href="https://www.facebook.com/"><img src="img/Facebook.png"
+                            alt="facebook icon"></a><a href="https://www.instagram.com/">
                         <img src="img/ins.png" alt="instagram icon">
                     </a><a href="https://x.com/"><img src="img/twitter.png" alt="twitter icon"></a></div>
                 <form action="#" method="post" class="subscribe_form">

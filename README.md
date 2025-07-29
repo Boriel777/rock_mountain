@@ -38,4 +38,4 @@ Dies ist ein statischer responsive Onepager, den ich auf Basis eines vorgegebene
 
 
 Live-Demo
-[URL]boriel777.github.io/rock_mountain/
+<a href="https://boriel777.github.io/rock_mountain/" target="_blank" noopener noreferrer>boriel777.github.io/rock_mountain/</a>

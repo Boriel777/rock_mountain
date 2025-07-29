@@ -7,13 +7,13 @@
 
 ## Projektbeschreibung
 
-Dies ist ein statischer Onepager, den ich auf Basis eines vorgegebenen Designs **komplett per Hand in HTML und CSS umgesetzt** habe. Fokus lag auf **strukturierter Semantik**, **cleanem Code**, **Responsivität** und einer **übersichtlichen CSS-Architektur**.
+Dies ist ein statischer responsive Onepager, den ich auf Basis eines vorgegebenen Designs **komplett per Hand in HTML und CSS umgesetzt** habe. Fokus lag auf **strukturierter Semantik**, **cleanem Code**, **Responsivität** und einer **übersichtlichen CSS-Architektur**.
 
 ### Ziel des Projekts
 
 - Eigenständige Umsetzung eines Layouts ohne Frameworks  
 - Clean Code Prinzipien und Best Practices in HTML/CSS anwenden  
-- Responsives Layout (mobile first)  
+- Responsives Layout (mobile first)
 - Strukturierung von Stylesheets und Klassenlogik
 
 ---
@@ -38,4 +38,4 @@ Dies ist ein statischer Onepager, den ich auf Basis eines vorgegebenen Designs *
 
 
 Live-Demo
-[URL](https://boriel777.github.io/rock_mountain)
+[boriel777.github.io/rock_mountain/]boriel777.github.io/rock_mountain/

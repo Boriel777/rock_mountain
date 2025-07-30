@@ -195,6 +195,15 @@
 
 }
 
+@media (max-width: 985px) {
+    
+    .concert_about img {
+        max-width: 100%;
+        height: 350px;
+    }
+
+}
+
 @media screen and (max-width: 500px) {
 
     .concert_content {
